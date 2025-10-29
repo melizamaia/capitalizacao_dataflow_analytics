@@ -115,7 +115,7 @@ python src/etl_capitalizacao.py
 
 ## 📈 Dashboard
 
-![Visão geral do dashboard](report/img/dashboard_view.png)
+![Visão geral do dashboard](report/img/dashboard_overview.png)
 
 ---
 
