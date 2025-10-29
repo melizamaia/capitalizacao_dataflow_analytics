@@ -1,0 +1,32 @@
+services:
+  db:
+    image: postgres:16
+    container_name: cda_db
+    environment:
+      POSTGRES_USER: cda_user
+      POSTGRES_PASSWORD: cda_pass
+      POSTGRES_DB: brasilcap
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata_cda:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  pgadmin:
+    image: dpage/pgadmin4:8
+    container_name: cda_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@local.test
+      PGADMIN_DEFAULT_PASSWORD: Admin1234!
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+    ports:
+      - "5051:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - db
+    restart: unless-stopped
+
+volumes:
+  pgdata_cda:
+  pgadmin_data:
