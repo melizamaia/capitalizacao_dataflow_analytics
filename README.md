@@ -3,8 +3,6 @@
 Automação de ingestão, modelagem e análise para dados de capitalização (Brasilcap).  
 Stack: **Python**, **Docker**, **PostgreSQL** e **Power BI**.
 
-> **Status**: Em desenvolvimento para portfólio (dados fictícios/anonimizados).
-
 ---
 
 ## 🎯 Objetivos
@@ -47,7 +45,7 @@ README.md                  # documentação principal do projeto
 
 ## 🔐 Variáveis de ambiente
 
-Crie um arquivo `.env` (não versionado) com as variáveis abaixo:
+Crie um arquivo `.env` (não versionado / env ficticio) com as variáveis abaixo:
 ```
 PG_HOST=localhost
 PG_PORT=5432
@@ -55,6 +53,11 @@ PG_DB=brasilcap
 PG_USER=cda_user
 PG_PASSWORD=cda_pass
 ```
+⚠️ Atenção:
+Este é apenas um exemplo fictício, usado para fins de demonstração do projeto.
+Nenhuma credencial real é utilizada.
+O arquivo .env não deve ser versionado (ele já está listado no .gitignore).
+Em um ambiente real, substitua esses valores por variáveis seguras e configure-as diretamente no servidor ou container.
 
 ---
 
@@ -110,7 +113,9 @@ python src/etl_capitalizacao.py
    - **Banco**: `brasilcap`
 3) Atualize o modelo e publique se desejar (workspace pessoal/organizacional).
 
-> ![Visão geral do dashboard](report/img/dashboard_overview.png)
+## 📈 Dashboard
+
+> ![Visão geral do dashboard](report/img/dashboard_view.png)
 
 ---
 

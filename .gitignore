@@ -41,7 +41,6 @@ docker-compose.override.yml
 
 data/
 report/*.pdf
-report/img/
 bi/powerbi/
 *.csv
 *.xlsx
