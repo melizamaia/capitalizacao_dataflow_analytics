@@ -1,6 +1,6 @@
 # Capitalização Inteligente – DataFlow Analytics
 
-Automação de ingestão, modelagem e análise para dados de capitalização (Brasilcap).  
+Automação de ingestão, modelagem e análise para dados de capitalização.  
 Stack: **Python**, **Docker**, **PostgreSQL** e **Power BI**.
 
 ---
@@ -143,4 +143,4 @@ python src/gerar_relatorio.py
 ---
 
 ## 📄 Licença
-MIT (ajuste conforme necessidade).
+MIT
