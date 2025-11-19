@@ -111,7 +111,7 @@ python src/etl_capitalizacao.py
 2) Configure a conexão:
    - **Servidor**: `localhost,5432`  
    - **Banco**: `brasilcap`
-3) Atualize o modelo e publique se desejar (workspace pessoal/organizacional).
+
 
 ## 📈 Dashboard
 
